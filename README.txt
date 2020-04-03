@@ -1,0 +1,1 @@
+You just need to import this project in the Android studio. This is a very basic version of the application.
