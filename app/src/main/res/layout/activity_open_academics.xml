@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#241D36" >
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="106dp"
+        android:layout_height="80dp"
+        android:onClick="Schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/health"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/health"
+        android:layout_width="106dp"
+        android:layout_height="80dp"
+        android:onClick="Health"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/schedule"
+        app:layout_constraintStart_toEndOf="@+id/academics"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/books"
+        android:layout_width="140dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintStart_toEndOf="@+id/asignments"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/courses"
+        android:layout_width="149dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/books"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/grades"
+        android:layout_width="146dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/other"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/asignments"
+        android:layout_width="95dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="106dp"
+        android:layout_height="80dp"
+        android:onClick="main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/academics"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/academics"
+        android:layout_width="106dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/health"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/plan"
+        android:layout_width="95dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/other"
+        android:layout_width="93dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/academics" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
